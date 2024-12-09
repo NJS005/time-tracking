@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f172a;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .po{
+        
+        border-radius: 5px;
+  }
+  
+  /* Dashboard Layout */
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Profile Section */
+  .profile {
+    background-color: #334155;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .timeframe-selector {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .timeframe-selector li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+  }
+  
+  .timeframe-selector .active {
+    background-color: #4f46e5;
+    color: #fff;
+  }
+  
+  /* Cards Section */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card .top-section {
+    padding: 0.5rem;
+    background-color: #1e293b;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .card .bottom-section {
+    background-color: #334155;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card .time {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card .previous {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+  }
+  
+  /* Two-tone Colors for Cards */
+  .work .top-section {
+    background-color: #e63946;
+  }
+  .work .bottom-section {
+    background-color: #f94144;
+  }
+  
+  .play .top-section {
+    background-color: #0077b6;
+  }
+  .play .bottom-section {
+    background-color: #0096c7;
+  }
+  
+  .study .top-section {
+    background-color: #6a0572;
+  }
+  .study .bottom-section {
+    background-color: #9d65c9;
+  }
+  
+  .exercise .top-section {
+    background-color: #43aa8b;
+  }
+  .exercise .bottom-section {
+    background-color: #90be6d;
+  }
+  
+  .social .top-section {
+    background-color: #ff8800;
+  }
+  .social .bottom-section {
+    background-color: #ffc300;
+  }
+  
+  .self-care .top-section {
+    background-color: #f3722c;
+  }
+  .self-care .bottom-section {
+    background-color: #f8961e;
+  }
+  
