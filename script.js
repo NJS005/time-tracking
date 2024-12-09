@@ -41,20 +41,33 @@ function updateDashboard(data) {
     card.querySelector(".time").textContent = data[category];
   });
 }
-// JavaScript to handle the timeframe switching
+
 document.querySelectorAll('.timeframe-selector li').forEach((timeframe) => {
     timeframe.addEventListener('click', () => {
-      // Remove active class from all buttons
+    
       document.querySelectorAll('.timeframe-selector li').forEach((btn) => {
         btn.classList.remove('active');
       });
   
-      // Add active class to the clicked button
+      
       timeframe.classList.add('active');
   
-      // Update the card colors based on the selected timeframe
+     
       const selectedTimeframe = timeframe.dataset.timeframe;
       document.querySelector('.cards').className = `cards ${selectedTimeframe}`;
+    });
+  });
+  
+  
+ 
+  
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const modeToggle = document.querySelector('#mode-toggle');
+    const body = document.body;
+  
+    modeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
     });
   });
   
